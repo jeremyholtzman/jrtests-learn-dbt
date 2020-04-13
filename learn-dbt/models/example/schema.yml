@@ -52,3 +52,8 @@ sources:
               - unique
               - not_null
       - name: orders
+  - name: sample2
+    database: snowflake_sample_data
+    schema: tpch_sf001
+    tables:
+      - name: customer
