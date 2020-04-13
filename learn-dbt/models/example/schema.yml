@@ -39,3 +39,11 @@ models:
           tests:
             - accepted_values:
                 values: ['BUILDING', 'AUTOMOBILE', 'MACHINERY', 'HOUSEHOLD', 'FURNITURE']
+
+sources:
+  - name: sample
+    database: snowflake_sample_data  # Tell dbt to look for the source in the "raw" database
+    schema: tpch_sf1
+    tables:
+      - name: customer
+      - name: orders
