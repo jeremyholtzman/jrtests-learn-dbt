@@ -34,7 +34,6 @@ models:
         - name: c_custkey
           tests:
             - unique
-            - not_null
         - name: c_mktsegment
           tests:
             - accepted_values:
